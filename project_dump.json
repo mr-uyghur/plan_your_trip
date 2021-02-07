@@ -1,0 +1,65 @@
+[
+{
+    "model": "trip_app.user",
+    "pk": 1,
+    "fields": {
+        "first_name": "Ali",
+        "last_name": "Halmamat",
+        "email": "email@email.com",
+        "password": "$2b$12$xLPhiBb6UGrTsUTwZ9r04uwdN.Ff2YV6aTLiu9NdufiBlHcebThc2",
+        "created_at": "2021-02-07T02:32:56.711Z",
+        "updated_at": "2021-02-07T02:32:56.711Z"
+    }
+},
+{
+    "model": "trip_app.show",
+    "pk": 1,
+    "fields": {
+        "title": "London",
+        "network": "",
+        "release_date": "2021-02-01",
+        "end_date": "2021-02-06",
+        "description": "Lets go to London",
+        "created_at": "2021-02-07T03:12:26.946Z",
+        "updated_at": "2021-02-07T03:12:26.946Z"
+    }
+},
+{
+    "model": "trip_app.show",
+    "pk": 2,
+    "fields": {
+        "title": "Dubai",
+        "network": "",
+        "release_date": "2021-02-06",
+        "end_date": "2021-02-24",
+        "description": "let's go for a vacation",
+        "created_at": "2021-02-07T04:15:27.219Z",
+        "updated_at": "2021-02-07T04:15:27.219Z"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$150000$AQZbvqQabZ4n$tnGUDFgR7o0Lzx/f00E4YapVAzczp82DDM5x+X1QpTw=",
+        "last_login": "2021-02-07T02:33:14.597Z",
+        "is_superuser": true,
+        "username": "alimran",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-02-07T02:32:05.881Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xvqcw9wlvu8qamibt4j1o6al1zew5qod",
+    "fields": {
+        "session_data": "MjhiYTYxYWM0MmRjNTgxNTVkZmVkOWVhYTRmOTk5ZDhmYTg4N2IzNzp7InVzZXJfaWQiOjF9",
+        "expire_date": "2021-02-21T05:36:33.381Z"
+    }
+}
+]
