@@ -1,0 +1,31 @@
+<form action="/trip/{{show_list.id}}/update" method="POST">
+    <h1>Hello {{user.first_name}} let's edit your trip!</h1>
+    <a href="/logout">Logout</a>
+    {% csrf_token %}
+    
+    {% if messages %}
+<ul class="messages">    
+    {% for message in messages %}    
+        <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+    {% endfor %}
+</ul>
+{% endif %}
+<a href="/dashboard">Dashboard</a>
+    <br>
+    <br>
+    Destination: <input type="text" name="title" value = "{{show_list.title}}">
+    <br>
+    <br>
+    
+    Started Date <input type="date" name = "date_time" value = "{{show_list.release_date}}" required ><br>
+    End Date <input type="date" name = "end_time" value = "{{show_list.end_date}}" required><br>
+   <h2> Plan:</h2> 
+   <!-- <input type="text" name = "description" value = "{{show_list.description}}"> -->
+   <textarea name = "description" placeholder = "{{show_list.description}}">{{show_list.description}}</textarea>
+    
+    
+
+    <br>
+    <br>
+    <button type='submit'>Submit</button> <button><a href="/dashboard">Cancel</a></button>
+</form>
