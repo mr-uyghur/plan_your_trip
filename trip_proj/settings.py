@@ -26,7 +26,7 @@ SECRET_KEY = 't1loo7*(zvyioyxj$#$3asql8*6mc$rjks)gaahgph@0!%c)5%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [".herokuapp.com", ".researchthroughdesign.org"]
 
 
 # Application definition
