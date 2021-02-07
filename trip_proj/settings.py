@@ -24,9 +24,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 't1loo7*(zvyioyxj$#$3asql8*6mc$rjks)gaahgph@0!%c)5%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [".herokuapp.com", ".researchthroughdesign.org"]
+# ALLOWED_HOSTS = [".herokuapp.com", ".researchthroughdesign.org"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -83,21 +84,21 @@ WSGI_APPLICATION = 'trip_proj.wsgi.application'
 #     }
 # }
 
-DATABASES ={
-    'default':dj_database_url.config(default='postgres://postgres:root@localhost/trip_app')
-}
+# DATABASES ={
+#     'default':dj_database_url.config(default='postgres://postgres:root@localhost/trip_app')
+# }
 
 # pg database
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'trip_app',
-#         'USER': 'postgres',
-#         'PASSWORD': 'root',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'trip_app',
+        'USER': 'postgres',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
 
 
 # Password validation
